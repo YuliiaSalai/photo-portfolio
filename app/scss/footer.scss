@@ -1,0 +1,56 @@
+$color1:#0AB8B6;
+$color2:#FFFFFF;
+$color3:#38474E;
+$color5:#7E7E7E;
+footer{
+    height: 20vh;
+    margin-top: 10vh;
+    background-color: $color5;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    color:$color3;
+    .left_footer{
+        .logo{
+            font-family: 'Gruppo', cursive;
+            font-size: 45px;
+            font-weight: 900;
+            color: $color1;
+        }
+        p{
+            font-size: 11px;
+        }
+    }
+    .right_footer{
+        .footer_menu{
+            display: inline;
+            li{
+                display: inline-block;
+                padding-left: 10px;
+                padding-top: 35px;
+                a{
+                    color:$color3;
+                    font-size: 15px;
+                }
+                a:hover{
+                    color: $color1;
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
+#toTop{
+    width:50px;
+    height: 50px;
+    display: none;
+    position:fixed;
+    bottom:15px; 
+    right:25px;
+    cursor:pointer;
+    svg{
+        width:50px;
+        height:50px;
+    }
+}

@@ -1,0 +1,422 @@
+$color1:#0AB8B6;
+$color2:#FFFFFF;
+$color3:#38474E;
+$color4:#F9FAFC;
+$color5:#7E7E7E;
+.modal__wrap{
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    position: fixed;
+    top:0px;
+    display: none;
+    z-index:999;
+    .modal__block{
+        height: 500px;
+        width: 500px;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        background: linear-gradient(to top, $color5,$color4);  
+        border-radius: 5px; 
+        .linza{
+            display: block;
+            margin: auto;
+            width: 30vh;
+            height: 30vh;
+            margin-top: 5vh;
+        } 
+        #close{
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            cursor: pointer;
+            margin: 20px;
+            font-size: 30px;
+            color: $color1;
+        }
+        p{
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: 400;
+            color: $color3;
+            text-align: center;
+            color: $color3;
+            position: absolute;
+            bottom:70px;
+            left:20px;
+        }
+        .smile{
+            bottom:100px;
+            left:190px;
+        }
+    }
+}
+#main-content{
+    height: auto;
+    padding-top: 5vh;
+    h2{
+        color:$color3;
+        text-align: center;
+        font-weight: 400;
+    }
+    #gallery1, #gallery2, #gallery3{
+        min-height: 600px;
+        max-width: 930px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .gal1{
+            width: 280px;
+            height: 280px;
+        }
+        .gal1:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            z-index:999;
+        }
+        .gal1:nth-child(1){
+            background-image: url('../img/jpg/gal1.jpg');
+            background-size: contain;
+        }
+        .gal1:nth-child(2){
+            background-image: url('../img/jpg/gal2.jpg');
+            background-size: contain;
+        }
+        .gal1:nth-child(3){
+            background-image: url('../img/jpg/gal3.jpg');
+            background-size: contain;
+        }
+        .gal1:nth-child(4){
+            background-image: url('../img/jpg/gal4.jpg');
+            background-size: contain;
+        }
+        .gal1:nth-child(5){
+            background-image: url('../img/jpg/gal5.jpg');
+            background-size: contain;
+        }
+        .gal1:nth-child(6){
+            background-image: url('../img/jpg/gal6.jpg');
+            background-size: contain;
+        }
+
+    }
+    .watchAll{
+        display: block;
+        position: relative;
+        margin:auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        width: 220px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: $color1;
+        color: $color2;
+        font-family: 'Source Code Pro', monospace;
+        font-size:17px;
+        font-weight: 400;
+        span::after{
+            content: ' \2192';
+        }
+    }
+    .watchAll:hover:after{
+        content: "";
+        position: absolute;
+        left:0px;
+        top: 0px;
+        display: block;
+        width: 220px;
+        height: 50px;
+        border-radius: 5px;
+        background-color: rgba(0,0,0,0.1);
+    }
+    .bg2, .bg3{
+        background-color: $color4;
+        padding-top: 30px;
+        padding-bottom: 40px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        margin-bottom: 50px;
+        p{
+            color: $color3;
+            font-size: 30px;
+            text-align: center;
+            span{
+            font-weight: 600;}
+        }
+        .telephone{ 
+            position: relative;
+            width: 400px;
+            height: 50px;
+            margin-bottom: 20px;
+            input{
+                display: block;
+                margin: auto;
+                padding:10px;
+                width: 400px;
+                height: 50px;
+                font-family: inherit;
+                border-radius: 5px;
+                border: 1px solid rgba(56, 71, 78, 0.2);
+                font-size: 15px;
+            }
+            #btn{
+                width:20px;
+                height:20px;
+                font-size: 25px;
+                color: $color1;
+                position: absolute;
+                top:8px;
+                right:8px;
+            }   
+        } 
+        .contact{
+            max-width: 150px;
+            min-height: auto;
+            display: flex;
+            justify-content: space-between;
+            .icon2{
+                width:20px;
+                height:20px;
+                margin: auto;
+            }
+            .icon2:hover{
+                transform: scale(1.2);
+                transition: 0.3s;
+            }
+        }
+    }
+    #gallery2{
+        .gal2{
+            width: 280px;
+            height: 280px;
+        }
+        .gal2:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            z-index:999;
+        }
+        .gal2:nth-child(1){
+            background-image: url('../img/jpg/gal2-1.jpg');
+            background-size: contain;
+        }
+        .gal2:nth-child(2){
+            background-image: url('../img/jpg/gal2-2.jpg');
+            background-size: contain;
+        }
+        .gal2:nth-child(3){
+            background-image: url('../img/jpg/gal2-3.jpg');
+            background-size: contain;
+        }
+        .gal2:nth-child(4){
+            background-image: url('../img/jpg/gal2-4.jpg');
+            background-size: contain;
+        }
+        .gal2:nth-child(5){
+            background-image: url('../img/jpg/gal2-5.jpg');
+            background-size: contain;
+        }
+        .gal2:nth-child(6){
+            background-image: url('../img/jpg/gal2-6.jpg');
+            background-size: contain;
+        }
+    }
+    .bg3{
+        padding: 0;
+        .container{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            .youtube{
+                width: 50%;
+            }
+            svg{
+                width: 20vw;
+                height: 20vw;
+                cursor: pointer;
+                path{
+                    fill:$color3;
+                }
+            .st0{display:none;}
+            .st1{fill:none;}
+            }
+            svg:hover{
+                transform: rotateY(360deg);
+                transition: 1.5s;
+            }
+            svg:hover .firstPath{
+                fill:red;
+                transition: 3.5s;
+            }
+            svg:hover .secondPath{
+                fill:black;
+                transition: 3.5s;
+            }
+        }
+    }
+    #gallery3{
+        .gal3{
+            width: 280px;
+            height: 280px;
+        }
+        .gal3:hover{
+            transform: scale(1.1);
+            transition: 1s;
+            z-index:999;
+        }
+        .gal3:nth-child(1){
+            background-image: url('../img/jpg/gal3-1.jpg');
+            background-size: contain;
+        }
+        .gal3:nth-child(2){
+            background-image: url('../img/jpg/gal3-2.jpg');
+            background-size: contain;
+        }
+        .gal3:nth-child(3){
+            background-image: url('../img/jpg/gal3-3.jpg');
+            background-size: contain;
+        }
+        .gal3:nth-child(4){
+            background-image: url('../img/jpg/gal3-4.jpg');
+            background-size: contain;
+        }
+        .gal3:nth-child(5){
+            background-image: url('../img/jpg/gal3-5.jpg');
+            background-size: contain;
+        }
+        .gal3:nth-child(6){
+            background-image: url('../img/jpg/gal3-6.jpg');
+            background-size: contain;
+        }
+    }
+    hr{
+        width: 50vw;
+        height: 2px;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border: none;
+        background-color: $color1;
+    }
+    #masters{
+        min-height: 280px;
+        max-width: 930px;
+        display: flex;
+        justify-content: space-around;
+        .master{
+            width: 280px;
+            height: 280px;
+            .masterdescription{
+                color:$color1;
+                text-align: center;
+                font-size: 15px;
+                position: absolute;
+                left:0px;
+                top: 0px;
+                display: block;
+                width: 280px;
+                height: 280px;
+            }
+        }
+        .master:nth-child(1){
+            background-image: url('../img/jpg/master1.jpg');
+            background-size: contain;
+            position:relative;
+            cursor: pointer;
+        }
+        .master:nth-child(1):hover:before{
+            content: "Анна, 24года";
+            color:$color3;
+            line-height: 280px;
+            text-align: center;
+            font-size: 25px;
+            font-weight:600;
+            position: absolute;
+            left:0px;
+            top: 0px;
+            display: block;
+            min-width: 280px;
+            min-height: 280px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .master:nth-child(1):hover:after{
+            content: "Мастер семейной и свадебной фотосъемки с 3-х летним опытом";
+            color:$color1;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            width: 280px;
+            height: 120px;
+        }
+        .master:nth-child(2){
+            background-image: url('../img/jpg/master2.jpg');
+            background-size: contain;
+            position:relative;
+            cursor: pointer;
+        }
+        .master:nth-child(2):hover:before{
+            content: "Валерий, 28лет";
+            color:$color3;
+            line-height: 280px;
+            text-align: center;
+            font-size: 25px;
+            font-weight:600;
+            position: absolute;
+            left:0px;
+            top: 0px;
+            display: block;
+            width: 280px;
+            height: 280px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .master:nth-child(2):hover:after{
+            content: "Мастер портретного фото с 5-ти летним опытом";
+            color:$color1;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 280px;
+            height: 120px;
+        }
+        .master:nth-child(3){
+            background-image: url('../img/jpg/master3.jpg');
+            background-size: contain;
+            position:relative;
+            cursor: pointer;
+        }
+        .master:nth-child(3):hover:before{
+            content: "Станислав, 26лет";
+            color:$color3;
+            line-height: 280px;
+            text-align: center;
+            font-size: 25px;
+            font-weight:600;
+            position: absolute;
+            left:0px;
+            top: 0px;
+            display: block;
+            width: 280px;
+            height: 280px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .master:nth-child(3):hover:after{
+            content: "Самый креативный и непредсказуемый арт-фотограф";
+            color:$color1;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            width: 280px;
+            height: 120px;
+        }
+    }
+}

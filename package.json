@@ -1,0 +1,27 @@
+{
+  "name": "photo-portfolio",
+  "version": "1.0.0",
+  "description": "photo portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "Y"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Jul_salai/photo-portfolio.git"
+  },
+  "author": "Yuliia Salai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Jul_salai/photo-portfolio/issues"
+  },
+  "homepage": "https://gitlab.com/Jul_salai/photo-portfolio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.0.2"
+  },
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
+}

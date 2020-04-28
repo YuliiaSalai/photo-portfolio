@@ -1,0 +1,80 @@
+$color1:#0AB8B6;
+$color2:#FFFFFF;
+.bg1{
+    background-color: $color1;
+    height: 100vh;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.4);
+    .topMenu{
+        min-height: 8vh;
+        display:flex;
+        justify-content: space-between;
+        .logo{
+            font-family: 'Gruppo', cursive;
+            font-size: 45px;
+            font-weight: 900;
+            color: $color2;
+            line-height: 8vh;
+        }
+        .menuRight{
+            min-width: 250px;
+            min-height: auto;
+            display: flex;
+            justify-content: space-between;
+            .icon{
+                width:20px;
+                height:20px;
+                margin: auto;
+            }
+            .icon:hover{
+                transform: scale(1.2);
+                transition: 0.3s;
+            }
+            .home{
+                width:40px;
+                height:40px;
+            }
+        }
+    }
+    .bottomHeader{
+        color:$color2;
+        min-height:92vh;
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        .description{
+            width:60%;
+            align-self:center;
+            h1{
+                font-size: 50px;
+                font-weight: 400;
+            }
+            p{
+                font-size: 17px;
+            }
+            a{
+                button.watchGallery{
+                    margin-top: 10px;
+                    width: 220px;
+                    height: 50px;
+                    border: 2px solid $color2;
+                    border-radius: 5px;
+                    color: $color2;
+                    font-family: 'Source Code Pro', monospace;
+                    font-size:17px;
+                    font-weight: 600;
+                }
+                button.watchGallery:hover{
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+        .camera{
+            img{
+                width:30vw;
+                height:35vw;
+                float: right;
+            }
+        }
+    }
+
+}

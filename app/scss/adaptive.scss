@@ -1,0 +1,189 @@
+$color1:#0AB8B6;
+@media all and (max-width:900px){
+html{
+    body{
+        #main-content{
+            #gallery1, #gallery2, #gallery3{
+                min-height: 950px;
+                margin-top: 5vh;
+                }
+            }
+            #masters{
+                height: 620px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+}
+@media all and (max-width:750px){
+    body{
+        footer{
+            .right_footer{
+                .footer_menu{
+                    li{
+                        display: block;
+                        padding:0;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:600px){
+html{
+    body{
+        #main-content{
+            #gallery1, #gallery2, #gallery3{
+                min-height: 2200px;
+                margin-top: 5vh;
+                .gal1, .gal2, .gal3{
+                    width: 350px;
+                    height: 350px;
+                }
+            }
+            #masters{
+                height: 900px;
+                max-width: 500px;
+                flex-wrap: wrap;}
+            }
+        }
+    }   
+}
+@media all and (max-width:500px){
+    html{
+        body{
+            .bg1{
+                .bottomHeader{
+                    .description{
+                        h1{
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+            .modal__wrap{
+                .modal__block{
+                    width: 300px;
+                    height: 300px;
+                    .linza{
+                        width: 20vh;
+                        height: 20vh;
+                    }
+                    #close{
+                        top:0;
+                        right:0;
+                    }
+                    p{
+                        bottom:0;
+                    }
+                    .smile{
+                        bottom:50px;
+                        left:100px;
+                    }
+                }
+            }
+            #main-content{
+                .bg2, .bg3{
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:450px){
+    html{
+        body{
+            .bg1{
+                .topMenu{
+                    width: 100%;
+                    position: fixed;
+                    background-color: $color1;
+                    z-index:1100;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+                    .menuRight{
+                        min-width: 200px;
+                    }
+                }
+            }
+            #main-content{
+                .bg2{
+                    .telephone{
+                        width:300px;
+                        input{
+                            width:300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:380px){
+    html{
+        body{
+            .bg1{
+                .topMenu{
+                    .logo{
+                        font-size: 35px;
+                    }
+                    .menuRight{
+                        min-width: 170px;
+                        padding-top: 6px;
+                        .icon{
+                            width:20px;
+                            height:20px;
+                        }
+                        .home{
+                            width:35px;
+                            height:35px;
+                        }
+                    }
+                }
+                .bottomHeader{
+                    .description{
+                        h1{
+                            font-size: 20px;
+                        }
+                        p{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            footer{
+                .left_footer{
+                    .logo{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:380px){
+    html{
+        body{
+            #main-content{
+                .bg2{
+                    .telephone{
+                        width:250px;
+                        input{
+                            width:250px;
+                        }
+                    }
+                }
+                #gallery1, #gallery2, #gallery3{
+                    min-height: 1800px;
+                    margin-top: 5vh;
+                    .gal1, .gal2, .gal3{
+                        width: 280px;
+                        height: 280px;
+                    }
+                }
+            }
+        }
+    }
+}

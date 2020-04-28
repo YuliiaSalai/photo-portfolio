@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Source+Code+Pro:wght@200;400;700&display=swap');
+@import 'header';
+@import 'main-content';
+@import 'footer';
+@import 'adaptive';
+$color1:#0AB8B6;
+$color2:#FFFFFF;
+$color3:#38474E;
+$color4:#F9FAFC;
+$color5:#7E7E7E;
+*{
+    box-sizing: border-box;
+}
+body, html{
+    overflow-x: hidden;
+    margin:0;
+    font-family: 'Source Code Pro', monospace;
+    scroll-behavior: smooth;
+    ul{
+        list-style:none;
+        padding-left: 0;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+    }
+    .content{
+        max-width:1055px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        position: relative;
+    }
+    button{
+        background: transparent;
+        border:none;
+        cursor:pointer;
+    }
+    button:focus{
+        outline:none;
+    }
+    .visible{
+        display: block !important;
+    }
+}
